@@ -4,8 +4,8 @@ services:
   redis:
     image: redis
     environment:
-      ALLOW_EMPTY_PASSWORD: yes
-    port:
+      ALLOW_EMPTY_PASSWORD: "yes"
+    ports:
       - ${REDIS_PORT}:6379
     volumes:
       - redis:/data
